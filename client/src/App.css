@@ -1,0 +1,125 @@
+
+.app {
+  min-height: 100vh;
+  background: #f1f5f9;
+}
+
+header {
+  background: #102a43;
+  color: white;
+  padding: 28px 8%;
+}
+
+header h1 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #cbd5e1;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 35px auto;
+}
+
+.form-card, .result-card {
+  background: white;
+  color: #1e293b;
+  padding: 30px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+h2, h3, label {
+  color: #102a43;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 13px;
+  background: white !important;
+  color: #1e293b !important;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 110px;
+}
+
+button {
+  padding: 14px;
+  margin-top: 15px;
+  background: #087e8b;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #06636d;
+}
+
+.report-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.report-item p {
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+
+.error {
+  color: red;
+}
+
+
+.hotspot-section {
+  margin-top: 30px;
+}
+
+.hotspot-card {
+  background: #f0fdfa;
+  border-left: 5px solid #087e8b;
+  padding: 20px;
+  border-radius: 9px;
+  margin-top: 15px;
+}
+
+.hotspot-card h3 {
+  color: #087e8b;
+  margin-bottom: 10px;
+}
+
+.hotspot-card p {
+  margin: 8px 0;
+}
+
+.hotspot-card strong {
+  color: #b45309;
+}
