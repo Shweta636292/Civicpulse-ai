@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
+import { Navbar } from "./components/Navbar.jsx";
 
 import {
   MapContainer,
@@ -16,6 +17,7 @@ const API = "http://localhost:5000/api/reports";
 
 function App() {
   const [reports, setReports] = useState([]);
+  const [activeTab, setActiveTab] = useState("landing");
   const [message, setMessage] = useState("Loading CivicPulse AI...");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
@@ -180,11 +182,15 @@ function App() {
   return (
     <div className="app">
 
-      {/* HEADER */}
-      <header>
-        <h1>🌍 CivicPulse AI</h1>
-        <p>From Complaints to Intelligent Civic Action</p>
-      </header>
+      {/* APPLICATION SHELL NAVBAR & TELEMETRY */}
+      <Navbar
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        backendConnected={!message.includes("failed")}
+        reportsCount={reports.length}
+        criticalCount={criticalReports}
+        onRefresh={fetchReports}
+      />
 
       <main>
 
