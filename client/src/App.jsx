@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import { Navbar } from "./components/Navbar.jsx";
+import { LandingPage } from "./components/LandingPage.jsx";
 
 import {
   MapContainer,
@@ -13,7 +14,7 @@ import {
 
 import "leaflet/dist/leaflet.css";
 
-const API = "http://localhost:5000/api/reports";
+const API ="https://civicpulse-ai-lonp.onrender.com/api/reports";
 
 function App() {
   const [reports, setReports] = useState([]);
